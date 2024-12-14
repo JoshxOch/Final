@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Jaro:opsz@6..72&display=swap');
+
+.header {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-custom {
+      background-color: #000000; /* Verde */
+      padding: 15px 0;
+    }
+    .navbar-custom .navbar-brand {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar-custom .nav-link {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #d4d4d4;
+    }
+    .navbar-custom .social-icons i {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .navbar-custom .social-icons i:hover {
+      color: #d4d4d4;
+    }
+
+     /* Estilo del encabezado */
+     .custom-header {
+        background-color: #eedab4; /* Fondo verde */
+        padding: 15px 0;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+      }
+      .custom-header .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: 'Georgia', serif;
+        margin-left: 20px;
+      }
+      .custom-header .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .custom-header .menu li {
+        margin: 0 15px;
+        position: relative;
+      }
+      .custom-header .menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+      .custom-header .menu li a:hover {
+        color: #775d35;
+      }
+      /* Subrayado animado */
+      .custom-header .menu li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: #946d41;
+        transition: width 0.3s ease-in-out;
+      }
+      .custom-header .menu li a:hover::after {
+        width: 100%; /* Subrayado animado */
+      }
+  
+      /* Diseño responsivo */
+      @media (max-width: 768px) {
+        .custom-header {
+          flex-direction: column;
+          text-align: center;
+        }
+        .custom-header .menu {
+          margin-top: 10px;
+          flex-direction: column;
+        }
+        .custom-header .menu li {
+          margin: 10px 0;
+        }
+      }
+    /**/
+    
+     /* Fondo de la sección */
+     .hero-section {
+      background-image: url('../imagen/carta1.jpg'); /* Cambia esta URL con tu imagen */
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Estilo del título */
+    .hero-section h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Descripción y alineación del contenido */
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+    }
+
+    /* Estilo del texto de bienvenida */
+    .welcome-text {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    /* Estilo del botón de descarga */
+    .btn-download {
+      background-color: #f1c40f; /* Color dorado */
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+      border: none;
+      text-decoration: none;
+    }
+
+    .btn-download:hover {
+      background-color: #e67e22; /* Color naranja */
+      text-decoration: none;
+    }
+
+    /* Estilo de la sección */
+    .menu-section {
+      background-color: #f8f9fa; /* Color suave de fondo */
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    /* Estilo del título */
+    .menu-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #333;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo de la descripción */
+    .menu-section p {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Estilo del botón de descarga */
+    .btn-download {
+      background-color: #cea963; /* Color azul */
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-download:hover {
+      background-color: #805a30; /* Color más oscuro al hacer hover */
+      transform: translateY(-5px); /* Efecto de movimiento hacia arriba */
+    }
+
+    .btn-download:active {
+      background-color: #1c638b; /* Color al hacer clic */
+      transform: translateY(2px); /* Efecto de clic */
+    }
+    /* Estilo de la sección Tradiciones Peruanas */
+    .traditions-section {
+      background-color: #f4f4f4; /* Fondo claro */
+      padding: 60px 0;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    /* Estilo del título */
+    .traditions-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #d35400; /* Color naranja */
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      transition: transform 0.3s ease;
+    }
+
+    .traditions-section h1:hover {
+      transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    }
+
+    /* Estilo de la descripción */
+    .traditions-section p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards 0.5s;
+    }
+
+    /* Animación de aparición para la descripción */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Estilo del video */
+    .traditions-section video {
+      width: 100%; /* Video ocupa todo el ancho */
+      height: 450px; /* Video más alto */
+      object-fit: cover; /* Mantiene la relación de aspecto sin distorsionar */
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 30px;
+    }
+
+    .traditions-section video:hover {
+      transform: scale(1.05); /* Efecto de zoom al pasar el mouse sobre el video */
+    }
+
+    /* Contenedor del video */
+    .video-container {
+      margin-top: 30px;
+      overflow: hidden; /* Asegura que el contenido que se salga del contenedor no se muestre */
+    }
+
+    /* Estilo de la sección Nuestros Locales */
+    .locales-section {
+      background-color: #f8f9fa; /* Fondo claro */
+      padding: 80px 0;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .locales-section h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease;
+    }
+
+    .locales-section h2:hover {
+      transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    }
+
+    /* Estilo de las tarjetas de locales */
+    .local-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .local-card:hover {
+      transform: scale(1.05); /* Efecto de zoom en la tarjeta */
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    }
+
+    .local-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    .local-card .card-body {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .local-card:hover .card-body {
+      background-color: #daa766; /* Color de fondo al pasar el mouse */
+    }
+
+    .local-card .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .local-card .card-text {
+      font-size: 1.1rem;
+      color: #7f8c8d;
+    }
+
+    /* Estilo del contenedor de tarjetas */
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .local-card {
+        margin-bottom: 30px;
+      }
+    }
+
+       /* Estilos generales del footer */
+    .footer {
+        background-color: #c7a059;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+  
+      .footer h5 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+      }
+  
+      .footer .social-icons a {
+        color: white;
+        margin: 0 15px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+  
+      .footer .social-icons a:hover {
+        color: #c2a775;
+      }
+  
+      .footer .contact-info a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+  
+      .footer .contact-info a:hover {
+        color: #dad183;
+      }
+  
+      .footer .copyright {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        color: #f1f1f1;
+      }
+  
+      .footer .contact-info, .footer .social-icons {
+        margin-bottom: 20px;
+      }
+
+
+    /* Estilo de Enlaces Rápidos (Botones) */
+    .footer .quick-links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+  
+      .footer .quick-links .btn {
+        margin: 5px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+      }
+  
+      .footer .quick-links .btn:hover {
+        background-color: #887021;
+        color: white;
+      }
+  
+      /* Responsividad */
+      @media (max-width: 768px) {
+        .footer {
+          padding: 30px 0;
+        }
+        .footer .social-icons a {
+          margin: 0 10px;
+          font-size: 1.2rem;
+        }
+  
+        .footer .quick-links {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  
